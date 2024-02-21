@@ -26,12 +26,12 @@ public class program8{
             mv.visitVarInsn(Opcodes.ILOAD, 1);
             mv.visitInsn(Opcodes.ICONST_5);
             Label l0 = new Label();
-            mv.visitJumpInsn(Opcodes.IF_ICMPLE, l0);//If val stored at 1 <= 5, go to l0.
+            mv.visitJumpInsn(Opcodes.IF_ICMPLE, l0);
             mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
             mv.visitLdcInsn("hello");																	
             mv.visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "print", "(Ljava/lang/String;)V", false); 
             Label l1 = new Label();
-            mv.visitJumpInsn(Opcodes.GOTO, l1);//Jump to position l1.
+            mv.visitJumpInsn(Opcodes.GOTO, l1);
             mv.visitLabel(l0);
             mv.visitFrame(Opcodes.F_APPEND,1, new Object[] {Opcodes.INTEGER}, 0, null);
             mv.visitFieldInsn(Opcodes.GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
