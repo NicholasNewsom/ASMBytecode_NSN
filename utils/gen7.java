@@ -3,7 +3,7 @@ import static utils.Utilities.writeFile;
 import org.objectweb.asm.*;
 import org.objectweb.asm.Opcodes;
 
-public class program8{
+public class program7{
     public static void main(String[] args){
         ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
         cw.visit(Opcodes.V1_8, Opcodes.ACC_PUBLIC,"While", null, "java/lang/Object",null);
