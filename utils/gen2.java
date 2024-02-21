@@ -21,7 +21,7 @@ public class program2{
         {
             MethodVisitor mv=cw.visitMethod(Opcodes.ACC_PUBLIC+Opcodes.ACC_STATIC, "main", "([Ljava/lang/String;)V", null, null);
             mv.visitCode();
-            mv.visitVarInsn(Opcodes.BIPUSH, 16);
+            mv.visitVarInsn(Opcodes.BIPUSH, 10);
             mv.visitVarInsn(Opcodes.ISTORE, 1);
             mv.visitInsn(Opcodes.ICONST_5); 
             mv.visitVarInsn(Opcodes.ISTORE, 3);
